@@ -6,7 +6,6 @@ jobs:
   steps:
       - name: 🚚 Get latest code                     # Checkout the latest code
         uses: actions/checkout@v2
-
       - name: 📂 SFTP uploader                       # Upload to SFTP 
         uses: wangyucode/sftp-upload-action@v1.4.8
         with:
