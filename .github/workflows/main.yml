@@ -1,7 +1,5 @@
 - name: SFTP uploader
-
 on: [push]
-
 jobs:
   Upload-to-SFTP:
   uses: wangyucode/sftp-upload-action@v1.4.8
@@ -19,4 +17,4 @@ jobs:
           localDir: '.'                              # Required, Absolute or relative to cwd.
           remoteDir: '/'                             # Required, Absolute path only.
           exclude: '.git*,.DS_Store'                 # Optional. exclude patterns (glob), use ',' to split, Default to ''.
-´´´
+
