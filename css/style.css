@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('normalize.css');
+:root {
+    --blue: #3711F5;
+    --orange: #FF9E05;
+    --red: #DE042C;
+    --turquoise: #04DECC;
+    --green: #7FFA02;
+    --black: #020117;
+}
+
+body {
+    background: var(--black);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.header{
+    column-span: all;
+    padding: 1rem;
+    border-color: var(--blue);
+    border-radius: 4px ;
+    text-align: center;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
