@@ -7,15 +7,21 @@
     <title>Tostestas</title>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <h1>Tostestas de ouf</h1>
-        
-    </div>
-    <div class="main">
+<header>
+    <h1>Tostestas</h1>
+</header>
+    <main>
+        <button onclick="updateCounter()">😂</button>
+        <div id="counter">0</div>
+    </main>
+</body>
+<script>
+let i = 0;
+updateCounter = () =>{
+    i++
+    const counter = document.getElementById('counter')
 
-    </div>
-
-</div>
-
-</body></html>
+    counter.innerHTML = i
+}
+</script>
+</html>
