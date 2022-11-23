@@ -9,6 +9,10 @@
     --black: #020117;
 }
 
+div, body{
+    margin: 15px;
+}
+
 body {
     background: var(--black);
     color: #fff;
